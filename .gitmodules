@@ -1,0 +1,6 @@
+[submodule "graphs"]
+	path = graphs
+	url = https://github.com/yzerlaut/graphs.git
+[submodule "paper"]
+	path = paper
+	url = https://github.com/yzerlaut/paper.git
