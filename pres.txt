@@ -1,55 +1,57 @@
 Title: How model standardization underpins new tools in neuroscientific research
-
+Short Title: OSB 2019 Presentation
 Author: Neuroinformatics group, CNRS Gif sur Yvette, France
 
-* Abstract
+* Motivation
 
-Within this session dedicated to the building and sharing standardised neuronal models, I will present the contribution of our group in the standardizaztion of neuronal models and I will also present some new tools that managed to be implemented as a result of those "standards". I will successively present the two following aspects:
-1) What are the current developments in model standardization, both in terms of model implementation as well as in the release process of the model
-2) What are the resulting new tools that followed in terms of for model validation and model implementation, those tools were in the framework of the Human Brain Project
+Within this session dedicated to the building and sharing of neuronal models, I will present how this fits into a , the Human Brain Project.
+
+Many of you are familiar with the project, I'll briefly come back to the specific goals and methods of this collaborative effort.
 
 
-* Intro & Overview:
 
-Within this session dedicated to the building and sharing standardised neuronal models, I will first present the contribution of our group in the standardizaztion of neuronal models and I will also present some new tools that managed to be implemented as a result of those constaints, those "standards".
+the contribution of our group and collaborators in the standardization of neuronal models and I will also present some new tools that managed to be implemented as a result of those constaints, those "standards".
 
-So I will successively present the two following aspects:
-1) What are the current developments in model standardization, both in terms of model implementation as well as in the release process of the model
-2) What are the resulting new tools that followed in terms of for model validation and model implementation, those tools were in the framework of the Human Brain Project
+
+
+* Overview:
+
+I will present the contribution of our group and collaborators in the standardization of neuronal models and I will also present some new tools that managed to be implemented as a result of those constaints, those "standards".
+
+The talk will successively present those two aspects:
+I) What are the current developments in model standardization, both in terms of model building as well as in the release process of the model (sharing)
+II) What are the resulting new tools that followed in terms of model validation and model implementation. In particular this presentation will highlight the tools that are developed in the framework of the Human Brain Project.
 
 
 * Model standardization: model formatting and release 
 
 ** pyNN:
 
-The first effort toward standardized neuronal model is pyNN. pyNN is a simulator-independent language for building network models. 
+The first effort of the group toward standardized neuronal model is pyNN. pyNN is a simulator-independent language for building network models. 
 
 PyNN provides a library of:
-- standard neuronal model
+- neuronal model
 - (kinetic) synaptic models 
 - synaptic plasticity models
 - connectivity schemes
 
-PyNN allows to run simulations on different supports (currently NEURON, NEST and Brian) as well as a number of neuromorphic hardware systems (see part 2of the talk).
+PyNN allows to run simulations on different supports (currently NEURON, NEST and Brian) as well as a number of neuromorphic hardware systems (see part 2 of the talk).
 
 ** Sonata
 
+An important trend in recent neuroscientific research is the analysis of large-scale simulations of neural dynamics. Such research introduces specific constraints in the design and implementation of numerical simulations. 
 
-PyNN.Sonata -> 
+To meet the requirement of representing biophysical and point neuron circuits, the SONATA Data Format has been proposed by the Blue Brain Project and the Allen Institute for Brain Science.
+ -> optimized for performance for simulation, analysis and visualization of *large-scale* circuits
 
-SONATA Data Format: A common data model for representing biophysical and point neuron circuits proposed by the AIBS and BBP
- -> optimized for performance for simulation, analysis and visualization of large-scale circuits
-
-The need has arisen at both the Blue Brain Project (BBP) and the Allen Institute for Brain Science (AIBS) for efficient ways of representing circuits of neurons (composed of biophysically detailed neuron and point-neuron models) and the output of simulation thereof for analysis and visualization. Such representations are not generally available as open-source tools in the computational neuroscience community, so both the BBP and AIBS have developed internally their own representations to meet these needs. As the public release of these circuits is on both the AIBS and BBP roadmaps, it is desirable to converge on a data model to release these circuits, so as to provide a foundation to foster an emerging ecosystem of tools around the data model, developed by the AIBS, BBP and the community at large.
-
-The objective of this document is to specify a common data model for neural circuits and simulation output which can be used and supported in the future by both AIBS and BBP. The data model will be novel compared to other community approaches (e.g. NeuroML) in that it will be optimized for performance for simulation, analysis and visualization of large-scale circuits. This document is accompanied by an example network in the presented data format.
+*** PyNN.Sonata 
 
 
 ** Sciunit: a way to define standardized interfaces, 
 
 model testing, defines the capabilities that a model should have, 
-A lightweight way to define an interface for a model (i.e. to 
-
+A lightweig
+ht way to define an interface for a model (i.e. to 
 
 pyNN.Sonata
 
@@ -63,18 +65,21 @@ pyNN.Sonata
 
 ** Neurobotics
 
+
 ** Neuromorphic hardware 
+
 
 ** The Brain Simulation Platform of the HBP
 
 -->(BlueNaaS),
 
-** Model validation
+** Model validation framework
 
 
 
 * Summary
 
+Let's summarize 
 
 
 * Aknowledgments
@@ -82,10 +87,11 @@ pyNN.Sonata
 ** Contributors
 
 - A. Davison (Team leader)
-- S. 
-- 
-- 
+- S. Appukkutan 
+- ...
+  
+** Funding 
 
-Many of the tools developed with the context of the Human Brain Project.
+- Human Brain Project.
 
 
